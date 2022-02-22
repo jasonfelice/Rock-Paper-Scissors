@@ -50,7 +50,7 @@ body::after{
     display: flex;
     align-items: center;
 }
-#btn_container{
+#player_selection{
     border: 2px solid blue;
     /* user buttons border  */
     display: flex;
@@ -137,4 +137,15 @@ body::after{
     background: url(images/btns/scissors.png) no-repeat;
     background-size: 105px 150px;
     margin-left: 22px;
+}
+
+/* tools classes  */
+#player_selection > .btns:active{
+    transform: scale(0.97);
+}
+#computer_selection > .btns{
+    background-color: rgba(146, 146, 146, 0.438);
+}
+.display_none{
+    display: none;
 }
