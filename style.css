@@ -38,7 +38,7 @@ body::after{
     font-size: 4rem;
     padding: 10px;
 }
-
+/* UI containers  */
 #main_container {
     height: 70vh;
     width: 70vw;
@@ -50,7 +50,6 @@ body::after{
     display: flex;
     align-items: center;
 }
-
 #btn_container{
     border: 2px solid blue;
     /* user buttons border  */
@@ -63,10 +62,10 @@ body::after{
 #computer_selection{
     border: 2px solid red;
     /* computer selection border  */
-    margin-left: auto;
-    margin-right: 70px;
+    display: flex;
     align-items: center;
     flex-direction: column;
+    margin-right: 70px;
 }
 .btns{
     background-color: rgba(255, 255, 255, 0.418);
@@ -76,6 +75,9 @@ body::after{
     height: 150px;
     margin: 20px 0;
 }
+
+
+/* UI Buttons  */
 #paper::after{
     content: "";
     display: block;
