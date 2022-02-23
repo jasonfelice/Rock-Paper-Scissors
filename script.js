@@ -19,11 +19,6 @@ function mainGame(e){
     }
     play();
 }
-function fiveRounds(){
-    for(let i=0;i<5;i++){
-        mainGame(e)
-    }
-}
 
 function computerPlay() {
     choices = ["rock", "scissors","paper"];
