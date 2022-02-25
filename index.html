@@ -12,11 +12,11 @@
         #content_container{
             border: 2px solid rgb(255, 255, 255);
             border-style: dashed;
-            width: 700px;
+            width: 800px;
             height: 575px;
             margin: 0 auto;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             color: rgb(218, 218, 218);
         }
         .scorebox{
@@ -28,6 +28,19 @@
         }
         .scorebox h1{
             padding: 5px;
+        }
+        #inside_container{
+            border: 2px solid blue;
+            width: 500px;
+            height: 570px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+            text-align: center;
+        }
+        #total_scores{
+            flex-direction: column;
         }
     </style>
 </head>
@@ -42,14 +55,19 @@
         </div>
         <div id="content_container">
             <div id="player_scores" class="scorebox">
-                <h1>Your Scores</h1>
-                <div class="score">
+                <h1>Player</h1>
+                <div class="score"></div>
+            </div>
+            <div id="inside_container">
+                <div class="display_none" id="total_scores">
+                    <h1>Total Scores</h1>
+                    <h2 id="totalPlayerScores"></h2>
+                    <h2 id="totalComputerScores"></h2>
                 </div>
             </div>
             
-            
             <div id="computer_scores" class="scorebox">
-                <h1>Computer Scores</h1>
+                <h1>Computer</h1>
                 <div class="score">
                 </div>
             </div>
@@ -62,6 +80,3 @@
     </div>
 </body>
 </html>
-
-<!-- Ideas -->
-<!-- This time before you work in this project make sure to organize each feature in order. -->

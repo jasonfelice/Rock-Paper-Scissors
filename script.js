@@ -24,11 +24,13 @@ function mainGame(e) {
         playerScore++;
         playerScoreElement.appendChild(document.createTextNode("1"));
         computerScoreElement.appendChild(document.createTextNode("0"));
+        totalPlayerScores++;
     }
     else if (winner == -1) {
         computerScore++;
         playerScoreElement.appendChild(document.createTextNode("0"));
         computerScoreElement.appendChild(document.createTextNode("1"));
+        totalComputerScores++;
     }
     else {
         playerScoreElement.appendChild(document.createTextNode("0"));
@@ -37,12 +39,19 @@ function mainGame(e) {
     document.querySelector("#player_scores > .score").appendChild(playerScoreElement);
     document.querySelector("#computer_scores > .score").appendChild(computerScoreElement);
 
+
     if (round == 5) {
+        document.getElementById("totalPlayerScores").textContent = `Player: ${totalPlayerScores}`;
+        document.getElementById("totalComputerScores").textContent = `Computer: ${totalComputerScores}`;
+        document.getElementById("total_scores").classList.remove("display_none");
+        document.getElementById("total_scores").classList.add("display_flex");
         console.log([playerScore, computerScore]);
         console.log(round);
         playerScore = 0;
         computerScore = 0;
         round = 0;
+        totalPlayerScores = 0;
+        totalComputerScores = 0;
 
     }
 }
@@ -50,6 +59,8 @@ function mainGame(e) {
 let playerScore = 0;
 let computerScore = 0;
 let round = 0;
+let totalPlayerScores = 0;
+let totalComputerScores = 0;
 
 
 function clearScoreBoard() {
