@@ -5,48 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROCK_PAPER_SCISSORS</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>ROCK_PAPER_SCISSORS_</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <style>
-        #content_container{
-            border: 2px solid rgb(255, 255, 255);
-            border-style: dashed;
-            width: 800px;
-            height: 575px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            color: rgb(218, 218, 218);
-        }
-        .scorebox{
-            border: 2px solid red;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            overflow: auto;
-        }
-        .scorebox h1{
-            padding: 5px;
-        }
-        #inside_container{
-            border: 2px solid blue;
-            width: 500px;
-            height: 570px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            align-self: center;
-            text-align: center;
-        }
-        #total_scores{
-            flex-direction: column;
-        }
-    </style>
 </head>
 
 <body>
-    <h1 id="title">Rock_Paper_Scissors</h1>
+    <h1 id="title">Rock_Paper_Scissors<span>_</span></h1>
     <div id="main_container">
         <div id="player_selection">
             <div class="btns" value="paper" id="paper"></div>
@@ -59,13 +25,30 @@
                 <div class="score"></div>
             </div>
             <div id="inside_container">
+                <div class="display_flex" id="round_container">
+                    <h1>Select Rounds</h1>
+                    <div id="roundBox">
+                        <div id="roundMinus"></div>
+                        <div id="roundDisplayBox"></div>
+                        <div id="roundPlus"></div>
+                    </div>
+                </div>
+                <div class="display_none" id="gameOver">
+                    <h1>Game Over</h1>
+                </div>
+                <div class="display_none" id="winOrLose">
+                    <h1 class="display_none" id="win">You Win!</h1>
+                    <h1 class="display_none" id="lose">You Lose!</h1>
+                    <h1 class="display_none" id="tie">Tie!</h1>
+                </div>
+                <button id="playAgain" class="display_none">Play Again</button>
                 <div class="display_none" id="total_scores">
                     <h1>Total Scores</h1>
                     <h2 id="totalPlayerScores"></h2>
                     <h2 id="totalComputerScores"></h2>
                 </div>
             </div>
-            
+
             <div id="computer_scores" class="scorebox">
                 <h1>Computer</h1>
                 <div class="score">
@@ -79,4 +62,5 @@
         </div>
     </div>
 </body>
+
 </html>
