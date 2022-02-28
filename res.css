@@ -1,0 +1,181 @@
+@media only screen and (max-width: 1770px){
+    #player_selection{
+        margin-left: 15px;
+    }
+    #computer_selection{
+        margin-right: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 1629px){
+  #content_container{
+      width: 755px;
+  }
+}
+
+
+@media only screen and (max-width: 1555px){
+  #content_container{
+      width: 612px;
+  }
+}
+
+@media only screen and (max-width: 1360px){
+    .btns{
+        width: 125px;
+        height: 125px;
+    }
+    #paper::after{
+        background-size: 80px 125px;
+    }
+    #paper_c::after{
+        background-size: 80px 125px;
+    }
+    #rock::after{
+        background-size: 80px 125px;
+    }
+    #rock_c::after{
+        background-size: 80px 125px;
+    }
+    #scissors::after{
+        background-size: 80px 125px;
+    }
+    #scissors_c::after{
+        background-size: 80px 125px;
+    }
+  }
+
+  @media only screen and (max-width: 1278px){
+      #gameOver{
+          font-size: 2rem;
+      }
+      #total_scores{
+          font-size: .7rem;
+      }
+      .scorebox, #winOrLose{
+          font-size: .8rem;
+      }
+      #playAgain{
+          font-size: 1rem;
+      }
+      #content_container{
+          width: 460px;
+      }
+      #title{
+          font-size: 3rem;
+      }
+  }
+
+  @media only screen and (max-width: 1061px){
+    .btns{
+        width: 100px;
+        height: 100px;
+    }
+    #main_container{
+        width: 90vw;
+    }
+    #paper::after{
+        background-size: 55px 100px;
+    }
+    #paper_c::after{
+        background-size: 55px 100px;
+    }
+    #rock::after{
+        background-size: 55px 100px;
+    }
+    #rock_c::after{
+        background-size: 55px 100px;
+    }
+    #scissors::after{
+        background-size: 55px 100px;
+    }
+    #scissors_c::after{
+        background-size: 55px 100px;
+    }
+  }
+
+  @media only screen and (max-width: 770px){
+      #main_container{
+          margin-top: 2rem;
+      }
+      .scorebox{
+          display: none;
+      }
+      #content_container{
+          width: 300px;
+      }
+      #gameOver{
+          font-size: 1.5rem;
+      }
+      #title{
+          font-size: 2rem;
+      }
+      #round_container{
+          font-size: .7rem;
+      }
+      #roundBox{
+          width: 100px;
+      }
+      #roundDisplayBox{
+          font-size: 2rem;
+      }
+  }
+
+  @media only screen and (max-width: 592px){
+    #round_container{
+        font-size: .6rem;
+    }
+    #roundBox{
+        width: 90px;
+    }
+      #title{
+        font-size: 1.7rem;
+      }
+      #content_container{
+          width: 140px;
+      }
+      #gameOver{
+          font-size: 1.2rem;
+      }
+      .btns{
+        width: 70px;
+        height: 70px;
+    }
+    #paper::after{
+        background-size: 50px 70px;
+        margin-left: 10px;
+    }
+    #paper_c::after{
+        background-size: 50px 70px;
+        margin-left: 10px;
+    }
+    #rock::after{
+        background-size: 50px 70px;
+        margin-left: 10px;
+    }
+    #rock_c::after{
+        background-size: 50px 70px;
+        margin-left: 10px;
+    }
+    #scissors::after{
+        background-size: 50px 70px;
+        margin-left: 10px;
+    }
+    #scissors_c::after{
+        background-size: 50px 70px;
+        margin-left: 10px;
+    }
+    #total_scores{
+        font-size: .6rem;
+    }
+    #playAgain{
+        font-size: .7rem;
+    }
+    #winOrLose{
+        font-size: .6rem;
+    }
+    #inside_container{
+        justify-content: space-evenly;
+    }
+  }
