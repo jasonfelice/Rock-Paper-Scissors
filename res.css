@@ -179,3 +179,14 @@
         justify-content: space-evenly;
     }
   }
+
+  @media only screen and (max-height: 850px){
+      #content_container{
+          height: 480px;
+      }
+  }
+  @media only screen and (max-height: 700px){
+      #content_container{
+          height: 425px;
+      }
+  }
