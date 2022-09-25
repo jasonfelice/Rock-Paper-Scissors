@@ -5,7 +5,7 @@ let totalPlayerScores = 0;
 let totalComputerScores = 0;
 let selectedRounds = 3;
 
-document.getElementById'playAgain').addEventListener("click", playAgain);
+document.getElementById('playAgain').addEventListener("click", playAgain);
 document.getElementById('roundPlus').addEventListener("click", roundPlus);
 document.getElementById("roundMinus").addEventListener("click", roundMinus);
 
